@@ -1,0 +1,98 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.box {
+	background: #eee;
+	border: 1px solid grey;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.top,
+.footer { 
+	width: 100%;
+	height: 100px;
+ }
+
+ .container {
+ 	width: 100%;
+
+ }
+
+ .one {
+ 	width: 100px;
+ 	height: 500px;
+ 	float: left;
+
+ }
+
+ .two {
+ 	width: 760px;
+ 	height: 500px;
+ 	float: left;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+
+ }
+
+ .three {
+ 	width: 100px;
+ 	height: 500px;
+ 	float: right;
+ }
+
+ .four {
+ 	width: 480px;
+ 	height: 500px;
+ 	float: left;
+
+ }
+
+ .five {
+ 	width:  480px;
+ 	height: 500px;
+ 	float: right;
+ }
+
+ .six {
+ 	width: 320px;
+ 	height: 150px;
+ 	float: left;
+ 	margin-right: 10px;
+ }
+
+ .seven {
+ 	width: 320px;
+ 	height: 150px;
+ 	float: left;
+ }
+
+ .eight {
+ 	width: 320px;
+ 	height: 150px;
+ 	float: left;
+ 	margin-left: 10px;
+ }
